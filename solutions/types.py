@@ -1,6 +1,7 @@
 from typing import Callable
 
 type Grid = list[str] | list[list[str]]
+type ModifiableGrid = list[list[str]]
 type Coordinate = tuple[int, int]
 
 type Section = list[str]
