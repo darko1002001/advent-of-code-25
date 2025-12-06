@@ -24,6 +24,12 @@ def read_numbers(value: str) -> list[int]:
     return list(map(int, [i.group(1) for i in iter_]))
 
 
+def read_non_whitespace(value: str) -> list[str]:
+    pattern = re.compile(r"(-?\S+)")
+    iter_ = pattern.finditer(value)
+    return list(i.group(1) for i in iter_)
+
+
 def within_grid_bounds(grid: Grid, i: int, j: int) -> bool:
     if i < 0 or j < 0 or i >= len(grid) or j >= len(grid[0]):
         return False
