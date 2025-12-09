@@ -12,6 +12,7 @@ python = "^3.13"
 copier = "^9.4.1"
 pytest = "^8.3.3"
 numpy = "^2.2.0"
+shapely = "^2.1.2"
 
 [tool.pytest.ini_options]
 log_cli = true
